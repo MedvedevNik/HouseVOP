@@ -64,23 +64,15 @@ p {
 }
 
 .header-flex {
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-   -ms-flex-direction: column;
    flex-direction: column;
    justify-content: space-between;
    min-height: 810px;
 }
 
 .header__top {
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
    flex-direction: row;
-   -webkit-box-pack: justify;
    -ms-box-pack: justify;
    justify-content: space-between;
    align-items: center;
@@ -103,11 +95,7 @@ p {
 }
 
 .menu__items {
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
    justify-content: space-between;
    width: 540px;
 }
@@ -298,6 +286,46 @@ p {
   padding: 0 20px;
 }
 
+input::-webkit-input-placeholder {
+   color: #fff;
+   text-align: center;
+   left: -2px;
+   margin: 0 auto;
+   font-size: 16px;
+   font-weight: 300;
+   font-family: Roboto;
+}
+
+input::-moz-placeholder {
+   color: #fff;
+   text-align: center;
+   left: -2px;
+   margin: 0 auto;
+   font-size: 16px;
+   font-weight: 300;
+   font-family: Roboto;
+}
+
+input:-ms-input-placeholder {
+   color: #fff;
+   text-align: center;
+   left: -2px;
+   margin: 0 auto;
+   font-size: 16px;
+   font-weight: 300;
+   font-family: Roboto;
+}
+
+input::-ms-input-placeholder {
+   color: #fff;
+   text-align: center;
+   left: -2px;
+   margin: 0 auto;
+   font-size: 16px;
+   font-weight: 300;
+   font-family: Roboto;
+}
+
 input::placeholder {
    color: #fff;
    text-align: center;
@@ -308,14 +336,14 @@ input::placeholder {
    font-family: Roboto;
 }
 
-.input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
-.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
-.input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
-.input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
-.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
-.input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
-.input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
-.input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+.input::-moz-placeholder                {opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input::-webkit-input-placeholder       {opacity: 1; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input:-moz-placeholder                 {opacity: 1; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input:-ms-input-placeholder            {opacity: 1; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input:focus::-webkit-input-placeholder {opacity: 0; -webkit-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input:focus::-moz-placeholder          {opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input:focus:-moz-placeholder           {opacity: 0; -moz-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
+.input:focus:-ms-input-placeholder      {opacity: 0; -ms-transition: opacity 0.3s ease; transition: opacity 0.3s ease;}
 
 .btn {
    margin-bottom: 8px;
